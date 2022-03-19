@@ -1,0 +1,57 @@
+---
+title: "Poisson"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<br>
+
+<center>
+
+## **Poisson Regression**
+
+</center>
+
+<br>
+
+
+$$P(Y_{i} = y_{i}) = \frac{e^{-exp{ X_{i} \beta}} exp{ X_{i} \beta}^{y_{i}}}{y_{i}!}, \hspace{1cm} i = 1, \dots, n$$
+
+<br>
+
+```{r, echo=FALSE, out.width = '70%', out.height = '60%', fig.align="center"}
+knitr::include_graphics("poisplot.jpeg")
+```
+
+<br>
+
+$Poisson$ $regression$ is a generalized linear model that aims to model $count$-type (numeric) outcomes.
+
+<br>
+
+*Goals*:
+
+* Model count-type numeric outcomes;
+
+<br>
+
+*Assumptions*:
+
+* Outcome $Y$ is a count perunit of time or space, following a $Poisson$ $distribution$.
+* $Independence$ : observations must be independent.
+* $Mean$ and $variance$ of $Y$ must be equal.
+* $No$ $zero$ $inflation$: $Y$ must not have an excess of zeros.
+
+Generalizations of Poisson regression such as $negative$ $binomial$ $regression$ or $zero$ $inflated$ $models$ are often used in the case of unmet assumptions.
+
+
+<br>
+
+*Diagnostics*:
+
+* $Deviance$ $tests$ between $null$ (only containing an $intercept$) and $full$ (containing $reressors$) models.
+* $\chi^{2}$ (Chi-square) $Goodness$-$of$-$fit$ test.
+

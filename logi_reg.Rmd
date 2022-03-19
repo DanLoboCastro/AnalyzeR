@@ -1,0 +1,73 @@
+---
+title: "Logistic Regression"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<center>
+
+## **Logistic Regression**
+
+</center>
+
+<br>
+
+<center>
+<h5>
+
+Binary model
+
+</h5>
+</center>
+
+<br>
+
+<center>
+$$\pi(X) = \frac{exp\left( \beta_{0} + \beta_{1}X_{1}+\dots+\beta_{n}X_{n}\right) }{1+exp\left( \beta_{0} + \beta_{1}X_{1}+\dots+\beta_{n}X_{n}\right)}, \hspace{1cm} i = 1, \dots, n$$
+
+</center>
+
+<br>
+<center>
+
+
+
+$\pi$ denotes the probability of observation being in specified category of the binary outcome.
+
+
+</center>
+
+<br>
+
+```{r , echo=FALSE, out.width = '70%', out.height = '60%', fig.align="center"}
+knitr::include_graphics("logreg.jpeg")
+```
+
+<br>
+
+
+$Logistic$ $regression$ models a relationship between predictor variables and  a $binary$, $multinomial$ or $ordinal$ response. Each case requires distinct logistic models. The current version of Analyzer only provides binary type, further versions may include more logistic models.
+
+
+
+<br>
+
+*Assumptions*
+
+(for $binary$ logistic models)
+
+* $Binary Response$: There must be only two possible responses.
+* $Independence$: The observations must be independent of one another.
+* $Linearity$: The logarithm of the odds ratio must be a linear function of $X$.
+
+*Diagnostic*
+
+* $Deviance$ tests.
+* $\chi^{2}$ $goodness$-$of$-$fit$ tests.
+
+
+
+

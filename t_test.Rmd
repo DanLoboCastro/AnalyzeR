@@ -1,0 +1,67 @@
+---
+title: "t_test"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<center>
+
+## **$t$-test**
+
+</center>
+<br>
+<center>
+$$t_{student} = \frac{\bar{x_{1}}-\bar{x_{2}}}{\sqrt{\frac{s_{p}^2}{n_{1}}+\frac{s_{p}^2}{n_{2}}}}, \hspace{1cm} for \hspace{0.3cm} n_{1} = n_{2}, \hspace{0.4cm} \sigma_{1} = \sigma_{2}$$
+
+</center
+<br>
+<center>
+
+where $\bar{x_{1}}$ and $\bar{x_{2}}$ denote the mean of the first and second sample, respectively. $\sigma$ and
+$s_{p}$ denote the $standard$ and $pooled$ $deviations$, respectively.
+
+
+</center>
+
+<br>
+
+A $t$-$test$ resorts to inference (by evaluation of the $t$-statistic, $t$-distribution, and the $degrees$ $of$ $freedom$) to determine if there is a significant difference between the means of two numeric samples. In order to perform a test with three or more means, one must use an analysis of variance (ANOVA).
+
+
+<br>
+
+<center>
+
+*Hypothesis*:
+
+<br>
+$H_{0}:true$ $difference$ $in$ $means$ $is$ $equal$ $to$ $zero$
+<br>
+$H_{1}:true$ $difference$ $in$ $means$ $is$ $not$ $equal$ $to$ $zero$
+
+
+</center>
+
+
+<br>
+
+*t-test types*
+
+* $Paired$: If samples originate from a single population perform.
+* $Independent$: If samples originate from two different populations.
+* $One$ $sample$: One sample being compared against a value.
+
+
+<br>
+
+*General assumptions*
+
+* $Random$ and $numeric$: samples to test are $random$ and in a $numeric$ scale.
+
+* $Normality$: samples to test follow a normal distribution.
+
+
+

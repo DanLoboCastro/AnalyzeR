@@ -1,0 +1,51 @@
+---
+title: "Linear Regression"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<br>
+
+<center>
+
+## **Linear Regression**
+
+</center>
+
+<br>
+
+$$y_{i} = \beta_{0} + \beta_{1}x_{i1}+ \dots + \beta_{p}x_{ip} +\varepsilon_{i} \hspace{0.5cm} i = 1,\dots, n$$
+
+
+```{r linear regression, echo=FALSE, out.width = '70%', out.height = '60%', fig.align="center", message = FALSE}
+knitr::include_graphics("lexp.png")
+```
+
+<br>
+
+
+This type of regression is a used to model the relationship between a numeric (continuous) response and one or more explanatory variables. The first is denoted as $y$, commonly referred to as the $dependent$ or $outcome$ variable. The following $x$ terms are referred as $regressors$ or as $independent$. If there is more than one regressor, the process is named as $multiple$ $linear$ $regression$.
+
+<br>
+
+*Aims*:
+
+* Prediction, forecasting;
+* Measure impact of $regressors$ in the variation of the $outcome$.
+
+<br>
+
+*Assumptions*:
+
+* $Linearity$: Existence of a $linear$ $relationship$ between the $dependent$ and $independent$ variables.
+* Lack of $multicolinearity$ between regressors.
+* $Normality$ $of$ $residuals$:The residual errors are assumed to be normally distributed.
+* $Homoscedasticity$: The residuals are assumed to have a constant variance.
+* $Independence$ $of$ $residuals$ $error$ $terms$.
+
+
+
+

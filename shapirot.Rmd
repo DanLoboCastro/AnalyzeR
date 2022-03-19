@@ -1,0 +1,46 @@
+---
+title: "shapiro"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<center>
+
+## **Shapiro-Wilk normality test**
+
+</center>
+
+<br>
+<center>
+
+The $Shapiro$ – $Wilk$ test is used to test if the sample follows a $normal$ distribution.
+</center>
+
+<br>
+<center>
+$$W = \frac{\left ( \sum_{i=1}^{n} a_{i}x_{\left(i\right)}  \right)^2}{\sum_{i=1}^{n} \left( x_{i}-\bar{x}\right)^2}$$
+
+</center
+<br>
+<center>
+
+where $x_{\left(i\right)}$ follows the $i$ th order statistic and $a$ represents a coefficient (whose calculation details fall beyond the purpose of this short introduction).
+
+
+</center>
+
+
+<br>
+<center>
+*Hypothesis*:
+<br>
+$H_{0}:population$ $is$ $normally$ $distributed$
+<br>
+$H_{1}:population$ $is$ $not$ $normally$ $distributed$
+</center>
+
+
+
